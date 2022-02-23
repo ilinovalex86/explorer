@@ -2,4 +2,4 @@ module github.com/ilinovalex86/explorer
 
 go 1.13
 
-require github.com/ilinovalex86/consol v1.1.0
+require golang.org/x/text v0.3.7

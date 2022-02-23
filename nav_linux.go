@@ -2,8 +2,8 @@ package explorer
 
 import "strings"
 
-// NavLinux - Разбивает путь ОС Linux
-func NavLinux(path string) []LinkAndName {
+// NavFunc - Разбивает путь ОС Linux
+func NavFunc(path string) []LinkAndName {
 	var links []LinkAndName
 	tempPath := ""
 	if path == "/" {

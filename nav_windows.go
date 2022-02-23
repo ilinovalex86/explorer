@@ -2,8 +2,8 @@ package explorer
 
 import "strings"
 
-// NavWindows - Разбивает путь ОС Windows
-func NavWindows(path string) []LinkAndName {
+// NavFunc - Разбивает путь ОС Windows
+func NavFunc(path string) []LinkAndName {
 	if path[len(path)-1] == '\\' {
 		path = path[:len(path)-1]
 	}

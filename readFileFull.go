@@ -5,8 +5,10 @@ import (
 )
 
 // ReadFileFull - читает файл целиком, возвращает строку
-func ReadFileFull(fileName string) []byte {
+func ReadFileFull(fileName string) ([]byte, error) {
 	b, err := ioutil.ReadFile(fileName)
-	check(err)
-	return b
+	if err != nil {
+		return nil, err
+	}
+	return b, err
 }
